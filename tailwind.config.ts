@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
     extend: {
+      spacing: {
+        '22': '5.5rem', // Added for FloatingWhatsAppButton positioning
+      },
       fontFamily: {
         body: ['Inter', 'sans-serif'],
         headline: ['Poppins', 'sans-serif'],

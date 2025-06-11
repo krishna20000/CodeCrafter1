@@ -3,7 +3,8 @@ import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/toaster';
-import { FloatingCallButton } from '@/components/ui/FloatingCallButton'; // Updated import
+import { FloatingCallButton } from '@/components/ui/FloatingCallButton';
+import { FloatingWhatsAppButton } from '@/components/ui/FloatingWhatsAppButton'; // Added import
 
 export const metadata: Metadata = {
   title: 'CodeCrafter Digital - Launch Your Website for Just ₹21/day',
@@ -30,7 +31,8 @@ export default function RootLayout({
         </main>
         <Footer />
         <Toaster />
-        <FloatingCallButton /> {/* Updated component */}
+        <FloatingCallButton />
+        <FloatingWhatsAppButton /> {/* Added component */}
       </body>
     </html>
   );
