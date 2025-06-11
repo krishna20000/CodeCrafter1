@@ -32,7 +32,7 @@ export function ContactForm() {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    const whatsAppNumber = "919987258308"; // Target WhatsApp number without '+'
+    const whatsAppNumber = "919987258308"; // Target WhatsApp number 
     
     const messageBody = `New Contact Form Submission:
 -----------------------------
@@ -47,7 +47,7 @@ ${values.message}
     const encodedMessage = encodeURIComponent(messageBody);
     const whatsappUrl = `https://wa.me/${whatsAppNumber}?text=${encodedMessage}`;
 
-    // Attempt to open WhatsApp
+    // Attempt to open WhatsApp in a new tab/app
     window.open(whatsappUrl, '_blank');
 
     toast({
