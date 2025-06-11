@@ -1,3 +1,4 @@
+"use client";
 
 import { Section } from '@/components/ui/Section';
 import { SectionTitle } from '@/components/ui/SectionTitle';
@@ -6,10 +7,10 @@ import { AnimatedServiceEntry } from '@/components/sections/services/AnimatedSer
 import { Palette, Smartphone, Search, PenTool, Globe, MessageCircle, ShoppingCart, Wrench } from 'lucide-react';
 import type { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Our Services - CodeCrafter Digital',
-  description: 'Explore the range of web development services offered by CodeCrafter Digital, including custom design, mobile responsiveness, SEO, and e-commerce solutions.',
-};
+// export const metadata: Metadata = { // Metadata needs to be handled differently for client components if dynamic
+//   title: 'Our Services - CodeCrafter Digital',
+//   description: 'Explore the range of web development services offered by CodeCrafter Digital, including custom design, mobile responsiveness, SEO, and e-commerce solutions.',
+// };
 
 const services = [
   {
@@ -55,6 +56,12 @@ const services = [
 ];
 
 export default function ServicesPage() {
+  // If you need dynamic metadata in a client component, you'd typically set it
+  // using `useEffect` and `document.title`, or a more advanced SEO management solution.
+  // For static metadata, it's often better to keep the page as a Server Component if possible,
+  // or define it in the layout if it's global.
+  // For this fix, I've commented out the static metadata export.
+
   return (
     <Section id="services" className="bg-background">
       <SectionTitle subtitle="We offer a comprehensive suite of services to build and scale your online presence.">
