@@ -1,8 +1,8 @@
+
 import { Section } from '@/components/ui/Section';
 import { SectionTitle } from '@/components/ui/SectionTitle';
 import { ContactForm } from '@/components/forms/ContactForm';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
-import Image from 'next/image';
 import { Mail, Phone, Clock } from 'lucide-react';
 import type { Metadata } from 'next';
 
@@ -46,19 +46,21 @@ export default function ContactPage() {
             </div>
             <div>
               <h3 className="font-headline text-2xl font-semibold text-primary mb-4">Our Location</h3>
-              {/* Placeholder for Google Map Embed */}
               <div className="aspect-video bg-muted rounded-lg overflow-hidden border border-border shadow-md">
-                <Image 
-                  src="https://placehold.co/600x400.png?text=Google+Map+Placeholder" 
-                  alt="Google Map Placeholder" 
-                  width={600} 
-                  height={400} 
-                  className="w-full h-full object-cover"
-                  data-ai-hint="map location" 
-                />
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d482634.9432644145!2d72.60091457308284!3d19.08252232382148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Google Map of Mumbai, Maharashtra"
+                  className="w-full h-full"
+                ></iframe>
               </div>
               <p className="mt-2 text-sm text-foreground/70">
-                123 Tech Street, Innovation Hub, Bangalore, India
+                CodeCrafter Digital, Mumbai, Maharashtra, India
               </p>
             </div>
           </div>
