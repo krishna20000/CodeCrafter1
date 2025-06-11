@@ -12,7 +12,7 @@ const navItems = [
 
 const socialIcons = [
   { href: 'https://github.com', icon: Github, label: 'GitHub' },
-  { href: 'https://linkedin.com', icon: Linkedin, label: 'LinkedIn' },
+  { href: 'https://www.linkedin.com/company/codecrafter-tech', icon: Linkedin, label: 'LinkedIn' },
   { href: 'https://twitter.com', icon: Twitter, label: 'Twitter' },
 ];
 
