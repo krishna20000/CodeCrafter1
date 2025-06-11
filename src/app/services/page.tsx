@@ -1,8 +1,9 @@
+
 import { Section } from '@/components/ui/Section';
 import { SectionTitle } from '@/components/ui/SectionTitle';
-import { ServiceCard } from '@/components/cards/ServiceCard';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
-import { Palette, Smartphone, Search, PenTool, Globe, MessageCircle, ShoppingCart, Wrench, Settings } from 'lucide-react';
+import { AnimatedServiceEntry } from '@/components/sections/services/AnimatedServiceEntry';
+import { Palette, Smartphone, Search, PenTool, Globe, MessageCircle, ShoppingCart, Wrench } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -59,10 +60,10 @@ export default function ServicesPage() {
       <SectionTitle subtitle="We offer a comprehensive suite of services to build and scale your online presence.">
         Our Services
       </SectionTitle>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="max-w-3xl mx-auto space-y-6">
         {services.map((service, index) => (
-          <AnimatedSection key={index} animationType="slideInUp" delay={`delay-${(index % 3) * 100}`}>
-            <ServiceCard
+          <AnimatedSection key={index} animationType="slideInUp" delay={`delay-${index * 100}`}>
+            <AnimatedServiceEntry
               icon={service.icon}
               title={service.title}
               description={service.description}
