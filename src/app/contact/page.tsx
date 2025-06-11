@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const contactDetails = [
   { icon: Mail, text: 'contact@codecrafter.com', href: 'mailto:code.crafter.dev.hub@gmail.com' },
-  { icon: Phone, text: '+91 123 456 7890', href: 'tel:+911234567890' },
+  { icon: Phone, text: '+91 9987258308', href: 'tel:+919987258308' },
   { icon: Clock, text: 'Mon - Fri: 9 AM - 6 PM' },
 ];
 
