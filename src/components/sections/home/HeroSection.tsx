@@ -1,3 +1,4 @@
+
 import { GlowingButton } from '@/components/ui/GlowingButton';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 
@@ -8,7 +9,7 @@ export function HeroSection() {
       <AnimatedSection className="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center z-10" animationType="slideInUp">
         <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight">
           <span className="block text-foreground">Launch Your Website for</span>
-          <span className="block text-primary mt-2 sm:mt-3">Just <span className="text-accent">₹21</span>/day</span>
+          <span className="block text-primary mt-2 sm:mt-3">Just <span className="text-accent">₹29</span>/day</span>
         </h1>
         <p className="mt-6 max-w-xl mx-auto text-lg sm:text-xl md:text-2xl text-foreground/80">
           Custom design, hosting, domain & 1-year support.
