@@ -3,7 +3,7 @@ import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/toaster';
-import { WhatsAppButton } from '@/components/ui/WhatsAppButton';
+import { FloatingCallButton } from '@/components/ui/FloatingCallButton'; // Updated import
 
 export const metadata: Metadata = {
   title: 'CodeCrafter Digital - Launch Your Website for Just ₹21/day',
@@ -30,7 +30,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <Toaster />
-        <WhatsAppButton />
+        <FloatingCallButton /> {/* Updated component */}
       </body>
     </html>
   );
