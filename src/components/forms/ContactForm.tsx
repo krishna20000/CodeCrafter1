@@ -32,27 +32,27 @@ export function ContactForm() {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    const mailToEmail = "code.crafter.dev.hub@gmail.com";
-    const subject = `New Contact Form Inquiry from: ${values.name}`;
-    const emailBody = `You have a new contact form submission:
---------------------------------------------------
+    const whatsAppNumber = "919987258308"; // Target WhatsApp number without '+'
+    
+    const messageBody = `New Contact Form Submission:
+-----------------------------
 Name: ${values.name}
 Phone: ${values.phone}
 Email: ${values.email}
---------------------------------------------------
+-----------------------------
 Message:
 ${values.message}
---------------------------------------------------`;
+-----------------------------`;
 
-    const mailtoLink = `mailto:${mailToEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+    const encodedMessage = encodeURIComponent(messageBody);
+    const whatsappUrl = `https://wa.me/${whatsAppNumber}?text=${encodedMessage}`;
 
-    // This will attempt to open the user's default email client
-    // The user will need to click "send" in their email client.
-    window.open(mailtoLink);
+    // Attempt to open WhatsApp
+    window.open(whatsappUrl, '_blank');
 
     toast({
-      title: "Message Sent Successfully!",
-      description: "Our team will get in touch soon.",
+      title: "Thank you!",
+      description: "Our team will get in touch with you.",
       variant: "default",
     });
     form.reset();
