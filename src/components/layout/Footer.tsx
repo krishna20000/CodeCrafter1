@@ -1,6 +1,6 @@
 
 import Link from 'next/link';
-import { Github, Linkedin, Twitter, Code2 } from 'lucide-react';
+import { Instagram, Linkedin, Twitter, Code2 } from 'lucide-react';
 
 const navItems = [
   { href: '/', label: 'Home' },
@@ -11,7 +11,7 @@ const navItems = [
 ];
 
 const socialIcons = [
-  { href: 'https://github.com', icon: Github, label: 'GitHub' },
+  { href: 'https://www.instagram.com/official_codecrafter?igsh=emNvZDNyN2FzczE3', icon: Instagram, label: 'Instagram' },
   { href: 'https://www.linkedin.com/company/codecrafter-tech', icon: Linkedin, label: 'LinkedIn' },
   { href: 'https://twitter.com', icon: Twitter, label: 'Twitter' },
 ];
