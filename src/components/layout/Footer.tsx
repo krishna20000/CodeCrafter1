@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { Github, Linkedin, Twitter, Code2 } from 'lucide-react';
 
@@ -59,7 +60,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-border/50 text-center text-sm text-foreground/60">
-          <p>&copy; {new Date().getFullYear()} CodeCrafter Digital. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} CodeCrafter. All rights reserved.</p>
         </div>
       </div>
     </footer>
