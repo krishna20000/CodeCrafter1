@@ -1,3 +1,4 @@
+
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -31,13 +32,25 @@ export function ContactForm() {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    console.log(values);
+    const whatsappNumber = "9199878308"; // Country code + number without spaces or symbols
+    const messageText = `New Contact Form Submission:
+Name: ${values.name}
+Phone: ${values.phone}
+Email: ${values.email}
+Message: ${values.message}`;
+
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(messageText)}`;
+
+    // Open WhatsApp link in a new tab
+    window.open(whatsappUrl, '_blank');
+
+    // You might want to keep a delay here or remove it if not needed
+    // await new Promise(resolve => setTimeout(resolve, 1000)); 
+
     toast({
-      title: "Message Sent!",
-      description: "Thanks for reaching out. We'll get back to you soon.",
-      variant: "default", 
+      title: "Redirecting to WhatsApp...",
+      description: "Please review the message and send it via WhatsApp.",
+      variant: "default",
     });
     form.reset();
   }
@@ -98,7 +111,7 @@ export function ContactForm() {
           )}
         />
         <GlowingButton type="submit" className="w-full" disabled={form.formState.isSubmitting}>
-          {form.formState.isSubmitting ? "Sending..." : "Send Message"}
+          {form.formState.isSubmitting ? "Processing..." : "Send Message"}
           {!form.formState.isSubmitting && <Send className="ml-2 w-5 h-5" />}
         </GlowingButton>
       </form>
