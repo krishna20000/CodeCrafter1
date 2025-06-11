@@ -22,7 +22,7 @@ export function SectionTitle({ children, subtitle, className, align = 'center' }
       <h2 className="font-headline text-3xl sm:text-4xl md:text-5xl font-bold text-primary tracking-tight">
         {children}
       </h2>
-      {subtitle && <p className="mt-3 sm:mt-4 text-base sm:text-lg text-foreground/80 max-w-2xl mx-auto_caption">{subtitle}</p>}
+      {subtitle && <p className="mt-3 sm:mt-4 text-base sm:text-lg text-foreground/80 max-w-2xl mx-auto">{subtitle}</p>}
     </div>
   );
 }
