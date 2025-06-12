@@ -24,6 +24,7 @@ const portfolioItems = [
     title: 'Consultancy Firm Website',
     industry: 'Business Consulting',
     description: 'Professional website for a consulting firm, showcasing services, expertise, and client testimonials.',
+    liveLink: 'https://ssd-international.vercel.app',
     dataAiHint: 'consulting business',
   },
   {
