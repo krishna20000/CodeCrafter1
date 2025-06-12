@@ -20,7 +20,7 @@ const portfolioItems = [
     dataAiHint: 'ecommerce website',
   },
   {
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://i.postimg.cc/NGnmyXRL/Screenshot-2025-06-12-121424.png',
     title: 'Consultancy Firm Website',
     industry: 'Business Consulting',
     description: 'Professional website for a consulting firm, showcasing services, expertise, and client testimonials.',
