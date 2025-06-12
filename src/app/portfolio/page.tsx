@@ -43,21 +43,6 @@ const portfolioItems = [
     liveLink: 'https://yolomatrix-2.vercel.app/',
     dataAiHint: 'real estate',
   },
-  {
-    imageUrl: 'https://placehold.co/600x400.png',
-    title: 'Restaurant Online Menu',
-    industry: 'Food & Beverage',
-    description: 'Interactive online menu and reservation system for a local restaurant.',
-    dataAiHint: 'restaurant menu',
-  },
-  {
-    imageUrl: 'https://placehold.co/600x400.png',
-    title: 'Artist Portfolio Showcase',
-    industry: 'Arts & Culture',
-    description: 'Visually striking portfolio website for a digital artist to showcase their work.',
-    liveLink: '#',
-    dataAiHint: 'artist portfolio',
-  },
 ];
 
 export default function PortfolioPage() {
@@ -66,9 +51,9 @@ export default function PortfolioPage() {
       <SectionTitle subtitle="Take a look at some of the stunning websites we've crafted for our clients.">
         Our Work
       </SectionTitle>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8"> {/* Adjusted grid for 4 items, can also do lg:grid-cols-4 if one row is preferred for many items */}
         {portfolioItems.map((item, index) => (
-          <AnimatedSection key={index} animationType="scaleUp" delay={`delay-${(index % 3) * 100}`}>
+          <AnimatedSection key={index} animationType="scaleUp" delay={`delay-${(index % 2) * 100}`}> {/* Adjusted delay calculation based on 2 columns */}
             <PortfolioCard {...item} />
           </AnimatedSection>
         ))}
