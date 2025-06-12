@@ -50,7 +50,7 @@ const testimonials = [
     dataAiHint: 'yoga studio',
   },
   {
-    photoUrl: 'https://placehold.co/100x100.png',
+    photoUrl: 'https://images.unsplash.com/photo-1659352789320-42b2d5de5599?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     quote: 'The best investment I made for my new consultancy. The website is professional and easy to manage.',
     name: 'Rajesh Kumar',
     businessType: 'Business Consultant',
@@ -75,4 +75,3 @@ export default function TestimonialsPage() {
     </Section>
   );
 }
-
