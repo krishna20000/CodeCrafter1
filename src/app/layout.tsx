@@ -11,6 +11,10 @@ import { ThemeProvider } from '@/contexts/ThemeContext';
 export const metadata: Metadata = {
   title: 'CodeCrafter - Launch Your Website for Just ₹21/day',
   description: 'Custom web design, hosting, domain & 1-year support. Futuristic, dark-themed websites for startups and small businesses.',
+  icons: {
+    icon: 'https://i.postimg.cc/9MffWxM0/Chat-GPT-Image-Apr-27-2025-07-28-18-PM.png',
+    apple: 'https://i.postimg.cc/9MffWxM0/Chat-GPT-Image-Apr-27-2025-07-28-18-PM.png',
+  },
 };
 
 export default function RootLayout({
