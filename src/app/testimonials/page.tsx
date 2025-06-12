@@ -1,3 +1,4 @@
+
 import { Section } from '@/components/ui/Section';
 import { SectionTitle } from '@/components/ui/SectionTitle';
 import { TestimonialCard } from '@/components/cards/TestimonialCard';
@@ -27,14 +28,14 @@ const testimonials = [
     dataAiHint: 'man portrait',
   },
   {
-    quote: 'I was impressed by their attention to detail and understanding of my business needs. The ₹21/day offer is incredible value.',
+    quote: 'I was impressed by their attention to detail and understanding of my business needs. The ₹29/day offer is incredible value.',
     name: 'Rina Patel',
     businessType: 'Local Bakery Owner',
     rating: 4,
     dataAiHint: 'bakery shop',
   },
    {
-    photoUrl: 'https://placehold.co/100x100.png',
+    photoUrl: 'https://images.unsplash.com/photo-1681165558305-6e65c7e85d51?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     quote: 'Exceptional service from start to finish. The WhatsApp integration and SEO optimization have already made a big difference.',
     name: 'Vikram Reddy',
     businessType: 'Tech Startup Founder',
@@ -74,3 +75,4 @@ export default function TestimonialsPage() {
     </Section>
   );
 }
+
