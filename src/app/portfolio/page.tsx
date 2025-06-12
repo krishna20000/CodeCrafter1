@@ -16,7 +16,7 @@ const portfolioItems = [
     title: 'E-commerce Platform',
     industry: 'Online Retail',
     description: 'A fully-featured e-commerce platform with custom design, payment gateway integration, and product management.',
-    liveLink: '#',
+    liveLink: 'https://tulsiresin.com/',
     dataAiHint: 'ecommerce website',
   },
   {
