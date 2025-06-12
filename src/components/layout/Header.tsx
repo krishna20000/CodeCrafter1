@@ -42,7 +42,7 @@ export function Header() {
       isScrolled ? "bg-background/80 backdrop-blur-md shadow-lg" : "bg-transparent"
     )}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-20 ml-[-20px] w-[calc(100%+20px)]">
           <Link href="/" className="flex items-center gap-2 text-2xl font-headline font-bold text-primary hover:text-accent transition-colors md:mr-6 lg:mr-8 xl:mr-12">
             <Code2 className="w-8 h-8 stroke-primary group-hover:stroke-accent transition-colors" />
             CodeCrafter
