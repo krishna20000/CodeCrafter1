@@ -7,6 +7,7 @@ import { Menu, X, Code2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
+import { ThemeToggleButton } from '@/components/ui/ThemeToggleButton';
 
 const navItems = [
   { href: '/', label: 'Home' },
@@ -42,30 +43,38 @@ export function Header() {
     )}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link href="/" className="flex items-center gap-2 text-2xl font-headline font-bold text-primary hover:text-accent transition-colors md:mr-12">
+          <Link href="/" className="flex items-center gap-2 text-2xl font-headline font-bold text-primary hover:text-accent transition-colors md:mr-auto">
             <Code2 className="w-8 h-8 stroke-primary group-hover:stroke-accent transition-colors" />
             CodeCrafter
           </Link>
 
-          <nav className="hidden md:flex space-x-6">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={cn(
-                  "font-medium hover:text-accent transition-colors pb-1",
-                  pathname === item.href ? "text-accent border-b-2 border-accent" : "text-foreground/80"
-                )}
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
+          <div className="flex items-center">
+            <nav className="hidden md:flex space-x-6 items-center">
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={cn(
+                    "font-medium hover:text-accent transition-colors pb-1",
+                    pathname === item.href ? "text-accent border-b-2 border-accent" : "text-foreground/80"
+                  )}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+            
+            <div className="hidden md:block ml-4">
+              <ThemeToggleButton />
+            </div>
 
-          <div className="md:hidden">
-            <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-              {isMobileMenuOpen ? <X className="h-6 w-6 stroke-accent" /> : <Menu className="h-6 w-6 stroke-accent" />}
-            </Button>
+            <div className="md:hidden flex items-center ml-2">
+              <ThemeToggleButton />
+              <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="ml-2">
+                {isMobileMenuOpen ? <X className="h-6 w-6 stroke-accent" /> : <Menu className="h-6 w-6 stroke-accent" />}
+                <span className="sr-only">Toggle menu</span>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
