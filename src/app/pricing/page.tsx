@@ -1,3 +1,4 @@
+
 import { Section } from '@/components/ui/Section';
 import { SectionTitle } from '@/components/ui/SectionTitle';
 import { PricingCard } from '@/components/cards/PricingCard';
@@ -33,6 +34,20 @@ const pricingPlans = [
     bestFor: 'E-commerce & Full Setup',
     features: ['Custom 15+ Page Design', 'All Professional Features', 'eCommerce Functionality', 'Logo Design Included', 'Priority Support', '10-Day Delivery'],
   },
+  {
+    planName: 'Enterprise',
+    customPriceText: 'Contact Us',
+    bestFor: 'Large Scale & Custom Needs',
+    features: [
+      'Everything in Premium Plan', 
+      'Dedicated Account Manager', 
+      'Custom API Integrations', 
+      'Scalable Cloud Infrastructure', 
+      'Tailored SLA & Support'
+    ],
+    buttonText: "Contact Us",
+    buttonHref: "/contact",
+  },
 ];
 
 export default function PricingPage() {
@@ -42,7 +57,7 @@ export default function PricingPage() {
         <SectionTitle subtitle="Only pay for what you need with our clear, competitive pricing.">
           Transparent Pricing
         </SectionTitle>
-        <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {pricingPlans.map((plan, index) => (
             <AnimatedSection key={plan.planName} animationType="slideInUp" delay={`delay-${index * 100}`}>
               <PricingCard {...plan} />

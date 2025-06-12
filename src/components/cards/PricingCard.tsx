@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { GlowingButton } from '@/components/ui/GlowingButton';
 import { CheckCircle2 } from 'lucide-react';
@@ -5,8 +6,9 @@ import { cn } from '@/lib/utils';
 
 interface PricingCardProps {
   planName: string;
-  priceYearly: string;
-  priceDaily: string;
+  priceYearly?: string;
+  priceDaily?: string;
+  customPriceText?: string;
   bestFor: string;
   features: string[];
   isPopular?: boolean;
@@ -18,12 +20,17 @@ export function PricingCard({
   planName,
   priceYearly,
   priceDaily,
+  customPriceText,
   bestFor,
   features,
   isPopular = false,
-  buttonText = "Choose Plan",
+  buttonText, // Default will be handled below
   buttonHref = "/contact"
 }: PricingCardProps) {
+  
+  const displayButtonText = customPriceText ? "Contact Us" : (buttonText || "Choose Plan");
+  const displayButtonHref = customPriceText ? "/contact" : buttonHref;
+
   return (
     <Card className={cn(
       "flex flex-col h-full bg-card border rounded-xl shadow-lg transition-all duration-300 ease-out transform hover:scale-105",
@@ -37,11 +44,20 @@ export function PricingCard({
       <CardHeader className="pt-10 text-center">
         <CardTitle className="font-headline text-3xl text-primary">{planName}</CardTitle>
         <CardDescription className="text-foreground/70 mt-1">{bestFor}</CardDescription>
-        <div className="mt-6">
-          <span className="font-headline text-5xl font-bold text-accent">{priceYearly}</span>
-          <span className="text-foreground/70">/year</span>
-        </div>
-        <p className="text-sm text-foreground/60 mt-1">or {priceDaily}/day</p>
+        {customPriceText ? (
+          <div className="mt-6">
+            <span className="font-headline text-4xl font-bold text-accent">{customPriceText}</span>
+             <p className="text-sm text-foreground/60 mt-1">Tailored to your needs</p>
+          </div>
+        ) : (
+          <>
+            <div className="mt-6">
+              <span className="font-headline text-5xl font-bold text-accent">{priceYearly}</span>
+              <span className="text-foreground/70">/year</span>
+            </div>
+            <p className="text-sm text-foreground/60 mt-1">or {priceDaily}/day</p>
+          </>
+        )}
       </CardHeader>
       <CardContent className="flex-grow">
         <ul className="space-y-3 mt-6">
@@ -54,8 +70,8 @@ export function PricingCard({
         </ul>
       </CardContent>
       <CardFooter className="mt-auto pb-8">
-        <GlowingButton href={buttonHref} className="w-full" pulse={isPopular}>
-          {buttonText}
+        <GlowingButton href={displayButtonHref} className="w-full" pulse={isPopular}>
+          {displayButtonText}
         </GlowingButton>
       </CardFooter>
     </Card>
