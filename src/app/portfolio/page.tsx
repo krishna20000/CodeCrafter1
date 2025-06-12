@@ -1,3 +1,4 @@
+
 import { Section } from '@/components/ui/Section';
 import { SectionTitle } from '@/components/ui/SectionTitle';
 import { PortfolioCard } from '@/components/cards/PortfolioCard';
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 
 const portfolioItems = [
   {
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://i.postimg.cc/brrx7Hkf/Screenshot-2025-06-12-121034.png',
     title: 'E-commerce Platform',
     industry: 'Online Retail',
     description: 'A fully-featured e-commerce platform with custom design, payment gateway integration, and product management.',
