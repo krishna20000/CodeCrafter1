@@ -23,14 +23,15 @@ export function TestimonialCard({ photoUrl, quote, name, businessType, rating, c
     )}>
       <CardContent className="flex flex-col items-center">
         {photoUrl ? (
-          <Image
-            src={photoUrl}
-            alt={name}
-            width={80}
-            height={80}
-            className="rounded-full mb-4 border-2 border-primary object-cover"
-            data-ai-hint={dataAiHint}
-          />
+          <div className="relative w-20 h-20 rounded-full overflow-hidden mb-4 border-2 border-primary">
+            <Image
+              src={photoUrl}
+              alt={name}
+              layout="fill"
+              className="object-cover"
+              data-ai-hint={dataAiHint}
+            />
+          </div>
         ) : (
           <div className="w-20 h-20 rounded-full bg-muted mb-4 flex items-center justify-center border-2 border-primary">
             <User className="w-10 h-10 text-primary" />
