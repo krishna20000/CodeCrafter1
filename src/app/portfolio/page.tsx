@@ -32,7 +32,7 @@ const portfolioItems = [
     title: 'Modern Salon Booking Site',
     industry: 'Beauty & Wellness',
     description: 'An elegant website for a salon with online booking functionality and service galleries.',
-    liveLink: '#',
+    liveLink: 'https://pmcbarber.devfrend.com/',
     dataAiHint: 'salon spa',
   },
   {
