@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { Star, User } from 'lucide-react';
@@ -27,7 +28,7 @@ export function TestimonialCard({ photoUrl, quote, name, businessType, rating, c
             alt={name}
             width={80}
             height={80}
-            className="rounded-full mb-4 border-2 border-primary"
+            className="rounded-full mb-4 border-2 border-primary object-cover"
             data-ai-hint={dataAiHint}
           />
         ) : (
