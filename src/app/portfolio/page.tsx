@@ -36,7 +36,7 @@ const portfolioItems = [
     dataAiHint: 'salon spa',
   },
   {
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://i.postimg.cc/kMj3WJ52/Screenshot-2025-06-12-122126.png',
     title: 'Real Estate Listings Portal',
     industry: 'Real Estate',
     description: 'A dynamic portal for real estate listings with advanced search filters and agent profiles.',
