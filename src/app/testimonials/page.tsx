@@ -19,7 +19,7 @@ const testimonials = [
     dataAiHint: 'woman portrait',
   },
   {
-    photoUrl: 'https://placehold.co/100x100.png',
+    photoUrl: 'https://images.unsplash.com/photo-1659353222161-6c39fa853110?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     quote: 'The team was professional, creative, and delivered on time. Our new portfolio site looks amazing. Thank you, CodeCrafter!',
     name: 'Amit Singh',
     businessType: 'Freelance Photographer',
