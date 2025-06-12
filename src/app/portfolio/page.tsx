@@ -37,11 +37,11 @@ const portfolioItems = [
   },
   {
     imageUrl: 'https://i.postimg.cc/kMj3WJ52/Screenshot-2025-06-12-122126.png',
-    title: 'Real Estate Listings Portal',
-    industry: 'Real Estate',
-    description: 'A dynamic portal for real estate listings with advanced search filters and agent profiles.',
+    title: 'Adventure Travel Platform',
+    industry: 'Tourism & Travel',
+    description: 'A vibrant platform showcasing exciting travel destinations and local attractions. Discover your next adventure!',
     liveLink: 'https://yolomatrix-2.vercel.app/',
-    dataAiHint: 'real estate',
+    dataAiHint: 'tourism travel',
   },
 ];
 
@@ -51,9 +51,9 @@ export default function PortfolioPage() {
       <SectionTitle subtitle="Take a look at some of the stunning websites we've crafted for our clients.">
         Our Work
       </SectionTitle>
-      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8"> {/* Adjusted grid for 4 items, can also do lg:grid-cols-4 if one row is preferred for many items */}
+      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
         {portfolioItems.map((item, index) => (
-          <AnimatedSection key={index} animationType="scaleUp" delay={`delay-${(index % 2) * 100}`}> {/* Adjusted delay calculation based on 2 columns */}
+          <AnimatedSection key={index} animationType="scaleUp" delay={`delay-${(index % 2) * 100}`}>
             <PortfolioCard {...item} />
           </AnimatedSection>
         ))}
