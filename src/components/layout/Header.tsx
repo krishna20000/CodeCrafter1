@@ -43,13 +43,13 @@ export function Header() {
     )}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link href="/" className="flex items-center gap-2 text-2xl font-headline font-bold text-primary hover:text-accent transition-colors md:mr-12">
+          <Link href="/" className="flex items-center gap-2 text-2xl font-headline font-bold text-primary hover:text-accent transition-colors md:mr-6 lg:mr-8 xl:mr-12">
             <Code2 className="w-8 h-8 stroke-primary group-hover:stroke-accent transition-colors" />
             CodeCrafter
           </Link>
 
           <div className="flex items-center">
-            <nav className="hidden md:flex space-x-6 items-center">
+            <nav className="hidden md:flex md:space-x-3 lg:space-x-4 xl:space-x-6 items-center">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
@@ -64,7 +64,7 @@ export function Header() {
               ))}
             </nav>
             
-            <div className="hidden md:block ml-4">
+            <div className="hidden md:block md:ml-3 lg:ml-4">
               <ThemeToggleButton />
             </div>
 
