@@ -28,7 +28,7 @@ const portfolioItems = [
     dataAiHint: 'consulting business',
   },
   {
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://i.postimg.cc/J4PnDVfx/Screenshot-2025-06-12-121740.png',
     title: 'Modern Salon Booking Site',
     industry: 'Beauty & Wellness',
     description: 'An elegant website for a salon with online booking functionality and service galleries.',
