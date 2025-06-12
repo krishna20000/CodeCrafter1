@@ -28,6 +28,7 @@ const testimonials = [
     dataAiHint: 'man portrait',
   },
   {
+    photoUrl: 'https://i.postimg.cc/qMtqWZhv/test.jpg',
     quote: 'I was impressed by their attention to detail and understanding of my business needs. The ₹29/day offer is incredible value.',
     name: 'Rina Patel',
     businessType: 'Local Bakery Owner',
