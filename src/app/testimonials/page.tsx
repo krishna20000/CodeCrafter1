@@ -44,11 +44,12 @@ const testimonials = [
     dataAiHint: 'man tech',
   },
   {
+    photoUrl: 'https://i.postimg.cc/nzPZkp1Y/young-beautiful-woman-hairdresser-apron-holding-palms-together-standing-pink-wall.jpg',
     quote: 'Finally, a web agency that understands small businesses. The process was smooth, and the result exceeded my expectations.',
     name: 'Sunita Rao',
     businessType: 'Yoga Instructor',
     rating: 5,
-    dataAiHint: 'yoga studio',
+    dataAiHint: 'yoga instructor',
   },
   {
     photoUrl: 'https://images.unsplash.com/photo-1659352789320-42b2d5de5599?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
