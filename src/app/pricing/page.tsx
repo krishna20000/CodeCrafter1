@@ -6,7 +6,7 @@ import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Pricing Plans - CodeCrafter Digital',
+  title: 'Pricing Plans - CodeCrafter',
   description: 'Transparent and affordable pricing plans for website development. Choose the best plan for your business, starting at just ₹21/day.',
 };
 

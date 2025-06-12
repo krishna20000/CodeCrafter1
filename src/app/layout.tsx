@@ -7,7 +7,7 @@ import { FloatingCallButton } from '@/components/ui/FloatingCallButton';
 import { FloatingWhatsAppButton } from '@/components/ui/FloatingWhatsAppButton'; // Added import
 
 export const metadata: Metadata = {
-  title: 'CodeCrafter Digital - Launch Your Website for Just ₹21/day',
+  title: 'CodeCrafter - Launch Your Website for Just ₹21/day',
   description: 'Custom web design, hosting, domain & 1-year support. Futuristic, dark-themed websites for startups and small businesses.',
 };
 

@@ -6,14 +6,14 @@ import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Client Testimonials - CodeCrafter Digital',
-  description: 'Read what our satisfied clients have to say about their experience with CodeCrafter Digital.',
+  title: 'Client Testimonials - CodeCrafter',
+  description: 'Read what our satisfied clients have to say about their experience with CodeCrafter.',
 };
 
 const testimonials = [
   {
     photoUrl: 'https://images.unsplash.com/photo-1711188052690-e26f7fdced49?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    quote: 'CodeCrafter Digital transformed our online presence! The new website is fast, beautiful, and drives conversions. Highly recommended!',
+    quote: 'CodeCrafter transformed our online presence! The new website is fast, beautiful, and drives conversions. Highly recommended!',
     name: 'Priya Sharma',
     businessType: 'E-commerce Store Owner',
     rating: 5,
@@ -64,7 +64,7 @@ const testimonials = [
 export default function TestimonialsPage() {
   return (
     <Section id="testimonials" className="bg-background">
-      <SectionTitle subtitle="Hear from our happy clients and see why they trust CodeCrafter Digital.">
+      <SectionTitle subtitle="Hear from our happy clients and see why they trust CodeCrafter.">
         Client Testimonials
       </SectionTitle>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

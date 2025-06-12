@@ -19,8 +19,8 @@ import type { Metadata } from 'next';
 
 // This metadata is static. For dynamic metadata, you'd use the generateMetadata function.
 // export const metadata: Metadata = {
-// title: 'FAQ - CodeCrafter Digital',
-// description: 'Find answers to frequently asked questions about CodeCrafter Digital services and processes.',
+// title: 'FAQ - CodeCrafter',
+// description: 'Find answers to frequently asked questions about CodeCrafter services and processes.',
 // };
 
 

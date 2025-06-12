@@ -7,8 +7,8 @@ import { Mail, Phone, Clock } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact Us - CodeCrafter Digital',
-  description: 'Get in touch with CodeCrafter Digital for your web development needs. Reach out via form, email, or phone.',
+  title: 'Contact Us - CodeCrafter',
+  description: 'Get in touch with CodeCrafter for your web development needs. Reach out via form, email, or phone.',
 };
 
 const contactDetails = [
@@ -60,7 +60,7 @@ export default function ContactPage() {
                 ></iframe>
               </div>
               <p className="mt-2 text-sm text-foreground/70">
-                CodeCrafter Digital, Mumbai, Maharashtra, India
+                CodeCrafter, Mumbai, Maharashtra, India
               </p>
             </div>
           </div>

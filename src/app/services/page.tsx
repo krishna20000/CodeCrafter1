@@ -8,8 +8,8 @@ import { Palette, Smartphone, Search, PenTool, Globe, MessageCircle, ShoppingCar
 import type { Metadata } from 'next';
 
 // export const metadata: Metadata = { // Metadata needs to be handled differently for client components if dynamic
-//   title: 'Our Services - CodeCrafter Digital',
-//   description: 'Explore the range of web development services offered by CodeCrafter Digital, including custom design, mobile responsiveness, SEO, and e-commerce solutions.',
+//   title: 'Our Services - CodeCrafter',
+//   description: 'Explore the range of web development services offered by CodeCrafter, including custom design, mobile responsiveness, SEO, and e-commerce solutions.',
 // };
 
 const services = [

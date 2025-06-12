@@ -5,7 +5,7 @@ import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Our Work - CodeCrafter Digital',
+  title: 'Our Work - CodeCrafter',
   description: 'Browse through our portfolio of successfully completed web development projects for various industries.',
 };
 
