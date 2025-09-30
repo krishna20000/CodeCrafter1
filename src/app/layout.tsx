@@ -30,14 +30,14 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-      </head>
-      <body className="font-body antialiased bg-background text-foreground min-h-screen flex flex-col">
+        
         {/* === Zoho Marketing Snippet === */}
         <Script
           src="https://cdn-in.pagesense.io/js/60049282949/c756c005a5694bf5ad961ea6f1d75393.js"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
         />
-
+      </head>
+      <body className="font-body antialiased bg-background text-foreground min-h-screen flex flex-col">
         <ThemeProvider>
           <Header />
           <main className="flex-grow">{children}</main>
