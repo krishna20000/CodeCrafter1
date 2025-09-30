@@ -1,6 +1,7 @@
-
 import type { Metadata } from 'next';
 import './globals.css';
+import React from 'react';
+import Script from 'next/script'; // ✅ Import Script
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/toaster';
@@ -31,11 +32,21 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased bg-background text-foreground min-h-screen flex flex-col">
+        {/* === Zoho Marketing Snippet === */}
+        <Script
+          id="zoho-marketing"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              <script type="text/javascript">(function(w,s){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="https://cdn-in.pagesense.io/js/60049282949/c756c005a5694bf5ad961ea6f1d75393.js";var x=document.getElementsByTagName("script")[0];x.parentNode.insertBefore(e,x);})(window,"script");</script>
+              console.log('Zoho Marketing Script Loaded');
+            `,
+          }}
+        />
+
         <ThemeProvider>
           <Header />
-          <main className="flex-grow">
-            {children}
-          </main>
+          <main className="flex-grow">{children}</main>
           <Footer />
           <Toaster />
           <FloatingCallButton />
