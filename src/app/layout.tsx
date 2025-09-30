@@ -34,14 +34,8 @@ export default function RootLayout({
       <body className="font-body antialiased bg-background text-foreground min-h-screen flex flex-col">
         {/* === Zoho Marketing Snippet === */}
         <Script
-          id="zoho-marketing"
+          src="https://cdn-in.pagesense.io/js/60049282949/c756c005a5694bf5ad961ea6f1d75393.js"
           strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(w,s){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="https://cdn-in.pagesense.io/js/60049282949/c756c005a5694bf5ad961ea6f1d75393.js";var x=document.getElementsByTagName("script")[0];x.parentNode.insertBefore(e,x);})(window,"script");
-              console.log('Zoho Marketing Script Loaded');
-            `,
-          }}
         />
 
         <ThemeProvider>
